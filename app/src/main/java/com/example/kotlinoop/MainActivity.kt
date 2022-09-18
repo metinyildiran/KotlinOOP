@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         val myUser = User("James", 25)
         myUser.name = "Lars"
         myUser.age = 50
+        println(myUser.information())
 
         println(myUser.name)
         println(myUser.age)
@@ -35,5 +36,13 @@ class MainActivity : AppCompatActivity() {
         val barley = Dog()
         barley.test()
         barley.sing()
+
+        // Abstract and Interface
+
+        val myPiano = Piano()
+        myPiano.brand = "Yamaha"
+        myPiano.digital = true
+        println(myPiano.roomName)
+        myPiano.info()
     }
 }

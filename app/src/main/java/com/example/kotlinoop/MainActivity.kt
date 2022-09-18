@@ -2,6 +2,7 @@ package com.example.kotlinoop
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.coroutines.delay
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,5 +69,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         println(multiply2(2, 20))
+
+        // async
+        fun downloadMusicians(url: String, onCompletion: () -> Unit) {
+            println(url)
+            onCompletion()
+        }
+
+        downloadMusicians("some_url") {
+            println("completed")
+        }
+
     }
 }

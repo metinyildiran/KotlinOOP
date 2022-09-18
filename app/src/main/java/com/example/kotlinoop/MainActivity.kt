@@ -14,5 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         println(myUser.name)
         println(myUser.age)
+
+        val james = Musician("James", "Guitar", 55)
+
+        println(james.age)
     }
 }

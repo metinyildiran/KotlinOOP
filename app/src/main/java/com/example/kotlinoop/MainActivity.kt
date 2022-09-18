@@ -21,5 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         val lars = SuperMusician("Lars", "Drums", 60)
         lars.sing()
+
+        // Static Polymorphism
+        val mathematics = Mathematics()
+        println(mathematics.sum())
+        println(mathematics.sum(3,4))
+        println(mathematics.sum(5,12, 13))
+
+        // Dynamic Polymorphism
+        val animal = Animal()
+        animal.sing()
+
+        val barley = Dog()
+        barley.test()
+        barley.sing()
     }
 }

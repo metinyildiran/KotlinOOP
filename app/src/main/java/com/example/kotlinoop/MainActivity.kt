@@ -18,5 +18,8 @@ class MainActivity : AppCompatActivity() {
         val james = Musician("James", "Guitar", 55)
 
         println(james.age)
+
+        val lars = SuperMusician("Lars", "Drums", 60)
+        lars.sing()
     }
 }

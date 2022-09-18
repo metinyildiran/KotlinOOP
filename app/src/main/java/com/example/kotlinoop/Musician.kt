@@ -1,6 +1,6 @@
 package com.example.kotlinoop
 
-class Musician(name:String, instrument:String, age: Int) {
+open class Musician(name:String, instrument:String, age: Int) {
 
     // Encapsulation
 
